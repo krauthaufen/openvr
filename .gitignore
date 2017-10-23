@@ -1,0 +1,10 @@
+/.fake
+/bin/Debug
+/bin/Release
+/.paket/paket.exe
+/packages
+/paket-files
+/src/.vs/OpenVR/v14/*.suo
+obj/
+/.paket/Paket.Restore.targets
+/bin/*.nupkg
