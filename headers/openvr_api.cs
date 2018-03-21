@@ -191,7 +191,7 @@ public struct IVRSystem
 	internal _GetControllerStateWithPose GetControllerStateWithPose;
 
 	[UnmanagedFunctionPointer(CallingConvention.StdCall)]
-	internal delegate void _TriggerHapticPulse(uint unControllerDeviceIndex, uint unAxisId, char usDurationMicroSec);
+	internal delegate void _TriggerHapticPulse(uint unControllerDeviceIndex, uint unAxisId, ushort usDurationMicroSec);
 	[MarshalAs(UnmanagedType.FunctionPtr)]
 	internal _TriggerHapticPulse TriggerHapticPulse;
 

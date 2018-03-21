@@ -8,13 +8,10 @@ if errorlevel 1 (
   exit /b %errorlevel%
 )
 
-SET FSI_PATH=packages\build\FAKE\tools\Fake.exe
 
-IF exist boot.fsx ( 
-    "%FSHARPINSTALLDIR%fsi.exe" "boot.fsx" 
-    del "boot.fsx"
-	.paket\paket.exe install
-)
+.paket\paket.exe restore
+
+SET FSI_PATH=packages\build\FAKE\tools\Fake.exe
 
 if NOT exist paket.lock (
 	echo No paket.lock found, running paket install.
