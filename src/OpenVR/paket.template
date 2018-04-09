@@ -5,6 +5,4 @@ owners krauthaufen
 projectUrl https://github.com/krauthaufen/openvr
 description 
 	OpenVR bindings
-files
-    ..\..\bin\Release\OpenVR.dll ==> lib\net45
-    ..\..\bin\Release\OpenVR.pdb ==> lib\net45
+include-pdbs true
