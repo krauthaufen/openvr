@@ -8,3 +8,5 @@
 obj/
 /.paket/Paket.Restore.targets
 /bin/*.nupkg
+/src/.vs/OpenVR/v15/*.suo
+**/.vs/**
